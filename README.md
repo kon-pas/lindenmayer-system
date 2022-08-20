@@ -16,7 +16,7 @@ Implementacja zawiera dwie podstawowe operacje: rysowanie linii prostej oraz obr
 ## Wstęp do systemu Lindenmayera
 
 L-system jest zestawem reguł. Zawiera gramatykę składającą się z produkcji, które służą do wygenerowania słowa oraz zbiór reguł, na podstawie których rysowany jest fraktal, wykorzystując wygenerowane słowo. 
-Więcej znajdziesz[tutaj](https://en.wikipedia.org/wiki/L-system).
+Więcej znajdziesz [tutaj](https://en.wikipedia.org/wiki/L-system).
 
 ## Przykładowe fraktale utworzone za pomocą modułu
 
@@ -117,9 +117,9 @@ Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy wszyst
 
 ## Przykładowe użytkowanie
 
-### Pierwszy przykład
+1. Losowy obrazek
 
-#### Kod
+### Kod
 
 ```python
 # Tworzę produkcje:
@@ -147,13 +147,13 @@ system.commit("Mój L-system!")
 system.draw()
 ```
 
-#### Okno graficzne
+### Okno graficzne
 
 ![Przykładowe rysunek](assets/sample-figure.jpg)
 
-### Drugi przykład
+2. Smok Heighwaya
 
-#### Kod
+### Kod
 
 ```python
 # Inicjuję wbudowane L-systemy:
@@ -166,7 +166,7 @@ system = get_system(4)
 system.draw()
 ```
 
-#### Okno graficzne
+### Okno graficzne
 
 ![Smok Heighwaya](assets/dragon-curve.jpg)
 
