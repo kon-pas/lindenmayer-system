@@ -117,9 +117,9 @@ Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy wszyst
 
 ## Przykładowe użytkowanie
 
-1. Losowy obrazek
+### 1. Losowy obrazek
 
-### Kod
+#### Kod
 
 ```python
 # Tworzę produkcje:
@@ -147,13 +147,13 @@ system.commit("Mój L-system!")
 system.draw()
 ```
 
-### Okno graficzne
+#### Okno graficzne
 
 ![Przykładowe rysunek](assets/sample-figure.jpg)
 
-2. Smok Heighwaya
+### 2. Smok Heighwaya
 
-### Kod
+#### Kod
 
 ```python
 # Inicjuję wbudowane L-systemy:
@@ -166,7 +166,7 @@ system = get_system(4)
 system.draw()
 ```
 
-### Okno graficzne
+#### Okno graficzne
 
 ![Smok Heighwaya](assets/dragon-curve.jpg)
 
