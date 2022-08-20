@@ -76,15 +76,11 @@ Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy wszyst
 ```
 
 ##### Metody
-get_rules() - Zwraca listę z wszystkimi produkcjami.
-add_rule(rule) 
-Dodaje nową produkcje, jako argument przyjmuje instancje klasy Rule.
-get_rules_num()
-Zwraca liczbę produkcji
-remove_rule(index) 
-Usuwa, jeśli istnieje, produkcję ze wskazanym indeksem, jako argument przyjmuje 
-liczbę całkowitą. Indeks danej produkcji można uzyskać wyświetlając instancję 
-klasy Rules metodą print().
+
+- **get_rules()** - Zwraca listę z wszystkimi produkcjami.
+- **add_rule(rule)** - Dodaje nową produkcje, jako argument przyjmuje instancje klasy Rule.
+- **get_rules_num()** - Zwraca liczbę produkcji
+- **remove_rule(index)** - Usuwa, jeśli istnieje, produkcję ze wskazanym indeksem, jako argument przyjmuje liczbę całkowitą. Indeks danej produkcji można uzyskać wyświetlając instancję klasy Rules metodą print().
 
 ### Funkcje globalne
 
