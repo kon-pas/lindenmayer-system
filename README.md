@@ -103,7 +103,7 @@ Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy wszyst
 ### Funkcje globalne
 
 - **init_default_systems()** - W zmiennej globalnej systems umieszcza wcześniej przygotowane, przykładowe L-systemy, odpowiadające popularnym fraktalom.
-- **print_systems()**- Wypisuje numerowaną listę zapisanych systemów.
+- **print_systems()** - Wypisuje numerowaną listę zapisanych systemów.
 - **get_system(index)** - Zwraca system o podanym indeksie. Jako argument przyjmuje liczbę całkowitą. Indeks można uzyskać za pomocą funkcji print_systems().
 
 ### Zmienne globalne
