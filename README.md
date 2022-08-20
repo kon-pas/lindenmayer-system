@@ -20,7 +20,7 @@ Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
 
 ### Klasy
 
-#### Lsystem
+#### Klasa Lsystem
 
 Główna klasa modułu. Służy do zdefiniowania systemu Lindenmayera.
 
@@ -47,6 +47,38 @@ Główna klasa modułu. Służy do zdefiniowania systemu Lindenmayera.
 - **define_action(symbol, distance, angle)** - Definiuje specjalną akcję dla danego symbolu. Należy podać argument nazwany symbol, do którego przypisana będzie akcja. Podanie nazwanego argumentu distance sprawi, że akcją będzie rysowanie prostej o długości zgodnej z podaną wartścią. Musi to być liczba. Podanie nazwanego argumentu angle sprawi, że akcją będzie obrót o podany kąt. Musi to być liczba.
 - **draw()** - Wykorzystując zdefiniowany system, w nowym oknie rysuje fraktal w 2D.
 - **commit(name)** - Zapisuje L-system globalnie. Wszystkie zapisane L-Systemy przechowywane są w postacji listy w zmiennej globalnej systems.
+
+#### Klasa Rule
+
+Klasa Rule służy do zdefiniowania produkcji, poprzez stworzenie instacji klasy. Można to zrobić na dwa sposoby:
+
+1. Rule('[lewa strona produkcji] -> [prawa strona produkcji]')
+2. Rule( '[lewa strona produkcji]', '[prawa strona produkcji]')
+ 
+Instancje klasy Rule zawsze są wyświetlane w postaci:
+[lewa strona produkcji] -> [prawa strona produkcji]
+Przykładowo F -> F+G
+
+#### Klasa Rules
+
+Klasa Rules służy do grupowania produkcji, uprzednio utworzonych za pomocą
+klasy Rule. Przy inicjalizacji instancji klasy Rules można podać dowolną liczbę 
+argumentów, wszystkie natomaist muszą być instancjami klasy Rule.
+Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy 
+wszystkich produkcji, które zawiera, np.
+1. F -> F+G
+2. G -> F-G-F
+Metody dostępne dla użytkownika:
+get_rules()
+Zwraca listę z wszystkimi produkcjami.
+add_rule(rule) 
+Dodaje nową produkcje, jako argument przyjmuje instancje klasy Rule.
+get_rules_num()
+Zwraca liczbę produkcji
+remove_rule(index) 
+Usuwa, jeśli istnieje, produkcję ze wskazanym indeksem, jako argument przyjmuje 
+liczbę całkowitą. Indeks danej produkcji można uzyskać wyświetlając instancję 
+klasy Rules metodą print().
 
 ### Funkcje globalne
 
