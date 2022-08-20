@@ -57,20 +57,26 @@ Klasa Rule służy do zdefiniowania produkcji, poprzez stworzenie instacji klasy
  
 Instancje klasy Rule zawsze są wyświetlane w postaci:
 [lewa strona produkcji] -> [prawa strona produkcji]
-Przykładowo F -> F+G
+
+Przykładowo
+```
+F -> F+G
+```
 
 #### Klasa Rules
 
-Klasa Rules służy do grupowania produkcji, uprzednio utworzonych za pomocą
-klasy Rule. Przy inicjalizacji instancji klasy Rules można podać dowolną liczbę 
-argumentów, wszystkie natomaist muszą być instancjami klasy Rule.
-Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy 
-wszystkich produkcji, które zawiera, np.
+Klasa Rules służy do grupowania produkcji, uprzednio utworzonych za pomocą klasy Rule.
+
+Przy inicjalizacji instancji klasy Rules można podać dowolną liczbę argumentów, wszystkie natomaist muszą być instancjami klasy Rule.
+
+Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy wszystkich produkcji, które zawiera, np.
+```
 1. F -> F+G
 2. G -> F-G-F
-Metody dostępne dla użytkownika:
-get_rules()
-Zwraca listę z wszystkimi produkcjami.
+```
+
+##### Metody
+get_rules() - Zwraca listę z wszystkimi produkcjami.
 add_rule(rule) 
 Dodaje nową produkcje, jako argument przyjmuje instancje klasy Rule.
 get_rules_num()
