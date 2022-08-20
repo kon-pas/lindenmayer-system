@@ -15,14 +15,14 @@ Implementacja zawiera dwie podstawowe operacje: rysowanie linii prostej oraz obr
 
 ## Wstęp do systemu Lindenmayera
 
-L-system jest zestawem reguł. Zawiera gramatykę składającą się z produkcji, które służą do wygenerowania słowa oraz zbiór reguł, na podstawie których rysowany jest fraktal, wykorzystując wygenerowane słowo.
-Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
+L-system jest zestawem reguł. Zawiera gramatykę składającą się z produkcji, które służą do wygenerowania słowa oraz zbiór reguł, na podstawie których rysowany jest fraktal, wykorzystując wygenerowane słowo. 
+Więcej znajdziesz[tutaj](https://en.wikipedia.org/wiki/L-system).
 
 ## Przykładowe fraktale utworzone za pomocą modułu
 
 ### Krzywa Kocha
 
-![Krzywa Kocha](assets/koch-curve.jpg | width=100)
+![Krzywa Kocha](assets/koch-curve.jpg)
 
 ### Smok Heighwaya
 
