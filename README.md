@@ -5,16 +5,32 @@
 
 ## Opis projektu
 
-Projekt jest implementacją systemu Lindenmayera, nazywany również L-systemem.
-System taki może być przeznaczony do rysowania fraktali w 2D, na co kładzie nacisk ów implementacja.
+Projekt jest implementacją systemu Lindenmayera, nazywany również L-systemem. System taki może być przeznaczony do rysowania fraktali w 2D, na co kładzie nacisk ów implementacja.
+
 Użytkownik może zdefiniować własny system lub wykorzystać któryś z już istniejących systemów, wbudowanych w moduł.
+
 Symbole w produkcjach nie mają podziału na terminale i nieterminale.
+
 Implementacja zawiera dwie podstawowe operacje: rysowanie linii prostej oraz obrót.
 
 ## Wstęp do systemu Lindenmayera
 
 L-system jest zestawem reguł. Zawiera gramatykę składającą się z produkcji, które służą do wygenerowania słowa oraz zbiór reguł, na podstawie których rysowany jest fraktal, wykorzystując wygenerowane słowo.
 Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
+
+## Przykładowe fraktale utworzone za pomocą modułu
+
+### Krzywa Kocha
+
+Lorem
+
+### Smok Heighwaya
+
+Lorem
+
+### Trójkąt Sierpińskiego
+
+Lorem
 
 ## Dokumentacja
 
@@ -26,11 +42,13 @@ Główna klasa modułu. Służy do zdefiniowania systemu Lindenmayera.
 
 ##### Argumenty nazwane konstruktora
 
+W przypadku nie wystąpienia któregoś z argumentów przy inicjalizacji instancji, brane są wartości domyślne ze zmiennych globalnych.
+
 - **start** - Terminal startowy, rozpoczynający produkowanie słowa, na podstawie którego będzie rysowany fraktal. Terminal musi być ze zbioru terminali, przechowywanych jako lista terminals w zmiennych globalnych. Symbol startowy musi byc pojedynczym terminalem.
 - **distance** - Domyślna długość rysowanej prostej. Wszystkie terminale, dla których nie jest określona akcja, rysują prostą o długości równej tej wartości. Wartość musi być liczbą.
 - **angle** - Kąt obrotu. Znaki "-" i "+" powodują obrót o wskazany kąt, kolejno zgodnie i przeciwnie do ruchu wskazówek zegara.
 - **rules** - Zbiór wszystkich produkcji. Argument musi być instancją klasy Rules.
-- **steps** - Liczba iteracji po wszystkich produkcjach, w celu utworzenia słowa służącego do rysowania fraktalu. Argument musi być liczbą całkowitą. W przypadku nie wystąpienia któregoś z argumentów przy inicjalizacji instancji, brane są wartości domyślne ze zmiennych globalnych.
+- **steps** - Liczba iteracji po wszystkich produkcjach, w celu utworzenia słowa służącego do rysowania fraktalu. Argument musi być liczbą całkowitą.
 
 ##### Metody
 
