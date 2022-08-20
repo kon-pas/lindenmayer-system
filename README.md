@@ -22,7 +22,7 @@ Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
 
 ### Krzywa Kocha
 
-![Krzywa Kocha](assets/koch-curve.jpg)
+![Krzywa Kocha](assets/koch-curve.jpg | width=100)
 
 ### Smok Heighwaya
 
