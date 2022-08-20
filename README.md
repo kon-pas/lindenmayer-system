@@ -4,7 +4,34 @@
 > **Note**
 > Docummentation written in polish, as required. No english available.
 
-# Implementacja systemu Lindenmayera, wykorzystanie go do rysowania fraktali w 2D
+# Implementacja systemu Lindenmayera, wykorzystanie go do rysowania fraktali w 2D <!-- omit in toc -->
+
+## Spis treści <!-- omit in toc -->
+
+- [Opis projektu](#opis-projektu)
+- [Wstęp do systemu Lindenmayera](#wstęp-do-systemu-lindenmayera)
+- [Przykładowe fraktale utworzone za pomocą modułu](#przykładowe-fraktale-utworzone-za-pomocą-modułu)
+  - [Krzywa Kocha](#krzywa-kocha)
+  - [Smok Heighwaya](#smok-heighwaya)
+  - [Trójkąt Sierpińskiego](#trójkąt-sierpińskiego)
+- [Dokumentacja](#dokumentacja)
+  - [Klasy](#klasy)
+    - [Klasa Lsystem](#klasa-lsystem)
+      - [Argumenty nazwane konstruktora](#argumenty-nazwane-konstruktora)
+      - [Metody](#metody)
+    - [Klasa Rule](#klasa-rule)
+    - [Klasa Rules](#klasa-rules)
+      - [Metody](#metody-1)
+  - [Funkcje globalne](#funkcje-globalne)
+  - [Zmienne globalne](#zmienne-globalne)
+- [Przykładowe użytkowanie](#przykładowe-użytkowanie)
+  - [1. Losowy obrazek](#1-losowy-obrazek)
+    - [Kod](#kod)
+    - [Okno graficzne](#okno-graficzne)
+  - [2. Smok Heighwaya](#2-smok-heighwaya)
+    - [Kod](#kod-1)
+    - [Okno graficzne](#okno-graficzne-1)
+- [Wymagania](#wymagania)
 
 ## Opis projektu
 
