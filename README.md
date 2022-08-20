@@ -149,7 +149,7 @@ system.draw()
 
 #### Okno graficzne
 
-Lorem
+![Przykładowe rysunek](assets/sample-figure.jpg)
 
 ### Drugi przykład
 
@@ -168,7 +168,7 @@ system.draw()
 
 #### Okno graficzne
 
-Lorem
+![Smok Heighwaya](assets/dragon-curve.jpg)
 
 ## Wymagania
 
