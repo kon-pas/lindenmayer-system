@@ -24,27 +24,13 @@ Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
 
 Główna klasa modułu. Służy do zdefiniowania systemu Lindenmayera.
 
-##### Argumenty nazwane konstruktora:
+##### Argumenty nazwane konstruktora
 
-**start**
-Terminal startowy, rozpoczynający produkowanie słowa, na podstawie 
-którego będzie rysowany fraktal. Terminal musi być ze zbioru terminali, 
-przechowywanych jako lista terminals w zmiennych globalnych. Symbol 
-startowy musi byc pojedynczym terminalem.
-**distance**
-Domyślna długość rysowanej prostej. Wszystkie terminale, dla których nie 
-jest określona akcja, rysują prostą o długości równej tej wartości. Wartość 
-musi być liczbą.
-**angle**
-Kąt obrotu. Znaki "-" i "+" powodują obrót o wskazany kąt, kolejno zgodnie i 
-przeciwnie do ruchu wskazówek zegara.
-**rules**
-Zbiór wszystkich produkcji. Argument musi być instancją klasy Rules.
-**steps**
-Liczba iteracji po wszystkich produkcjach, w celu utworzenia słowa 
-służącego do rysowania fraktalu. Argument musi być liczbą całkowitą.
-W przypadku nie wystąpienia któregoś z argumentów przy inicjalizacji instancji, 
-brane są wartości domyślne ze zmiennych globalnych.
+- **start** - Terminal startowy, rozpoczynający produkowanie słowa, na podstawie którego będzie rysowany fraktal. Terminal musi być ze zbioru terminali, przechowywanych jako lista terminals w zmiennych globalnych. Symbol startowy musi byc pojedynczym terminalem.
+- **distance** - Domyślna długość rysowanej prostej. Wszystkie terminale, dla których nie jest określona akcja, rysują prostą o długości równej tej wartości. Wartość musi być liczbą.
+- **angle** - Kąt obrotu. Znaki "-" i "+" powodują obrót o wskazany kąt, kolejno zgodnie i przeciwnie do ruchu wskazówek zegara.
+- **rules** - Zbiór wszystkich produkcji. Argument musi być instancją klasy Rules.
+- **steps** - Liczba iteracji po wszystkich produkcjach, w celu utworzenia słowa służącego do rysowania fraktalu. Argument musi być liczbą całkowitą. W przypadku nie wystąpienia któregoś z argumentów przy inicjalizacji instancji, brane są wartości domyślne ze zmiennych globalnych.
 
 ##### Metody
 
