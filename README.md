@@ -22,16 +22,16 @@ Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
 - **set_angle(angle)** - Ustawia kąt obrotu (p. angle). Jako argument przyjmuje liczbę.
 - **get_angle()** - Zwraca kąt obrotu (p. angle).
 - **set_start(start)** - Ustawia symbol startowy. Jako argument przyjmuje terminal ze zbioru terminali, przechowywanych jako lista terminals w zmiennych globalnych.
--**get_start()** - Zwraca symbol startowy.
--**set_distance(distance)** - Ustawia domyślną długość rysowania prostej (p. distance). Jako argument przyjmuje liczbę.
--**get_distance()** - Zwraca domyślną długość rysowania prostej (p. distance). 
--**set_rules(rules)** - Ustawia zbiór produkcji. Jako argument przyjmuje instancję klasy Rules.
--**get_rules()** - Zwraca zbiór produkcji.
--**set_name(name)** - Ustawia nazwę L-systemu, nie jest ona do niczego wykorzystywana.
--**get_name()** - Zwraca nazwę L-systemu.
--**define_action(symbol, distance, angle)** - Definiuje specjalną akcję dla danego symbolu. Należy podać argument nazwany symbol, do którego przypisana będzie akcja. Podanie nazwanego argumentu distance sprawi, że akcją będzie rysowanie prostej o długości zgodnej z podaną wartścią. Musi to być liczba. Podanie nazwanego argumentu angle sprawi, że akcją będzie obrót o podany kąt. Musi to być liczba.
--**draw()** - Wykorzystując zdefiniowany system, w nowym oknie rysuje fraktal w 2D.
--**commit(name)** - Zapisuje L-system globalnie. Wszystkie zapisane L-Systemy przechowywane są w postacji listy w zmiennej globalnej systems.
+- **get_start()** - Zwraca symbol startowy.
+- **set_distance(distance)** - Ustawia domyślną długość rysowania prostej (p. distance). Jako argument przyjmuje liczbę.
+- **get_distance()** - Zwraca domyślną długość rysowania prostej (p. distance). 
+- **set_rules(rules)** - Ustawia zbiór produkcji. Jako argument przyjmuje instancję klasy Rules.
+- **get_rules()** - Zwraca zbiór produkcji.
+- **set_name(name)** - Ustawia nazwę L-systemu, nie jest ona do niczego wykorzystywana.
+- **get_name()** - Zwraca nazwę L-systemu.
+- **define_action(symbol, distance, angle)** - Definiuje specjalną akcję dla danego symbolu. Należy podać argument nazwany symbol, do którego przypisana będzie akcja. Podanie nazwanego argumentu distance sprawi, że akcją będzie rysowanie prostej o długości zgodnej z podaną wartścią. Musi to być liczba. Podanie nazwanego argumentu angle sprawi, że akcją będzie obrót o podany kąt. Musi to być liczba.
+- **draw()** - Wykorzystując zdefiniowany system, w nowym oknie rysuje fraktal w 2D.
+- **commit(name)** - Zapisuje L-system globalnie. Wszystkie zapisane L-Systemy przechowywane są w postacji listy w zmiennej globalnej systems.
 
 ### Funkcje globalne
 init_default_systems()
