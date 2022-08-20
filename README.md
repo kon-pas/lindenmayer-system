@@ -19,9 +19,9 @@ Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
 ## Dokumentacja
 
 ### Metody
--**set_angle(angle)** - Ustawia kąt obrotu (p. angle). Jako argument przyjmuje liczbę.
--**get_angle()** - Zwraca kąt obrotu (p. angle).
--**set_start(start)** - Ustawia symbol startowy. Jako argument przyjmuje terminal ze zbioru terminali, przechowywanych jako lista terminals w zmiennych globalnych.
+- **set_angle(angle)** - Ustawia kąt obrotu (p. angle). Jako argument przyjmuje liczbę.
+- **get_angle()** - Zwraca kąt obrotu (p. angle).
+- **set_start(start)** - Ustawia symbol startowy. Jako argument przyjmuje terminal ze zbioru terminali, przechowywanych jako lista terminals w zmiennych globalnych.
 -**get_start()** - Zwraca symbol startowy.
 -**set_distance(distance)** - Ustawia domyślną długość rysowania prostej (p. distance). Jako argument przyjmuje liczbę.
 -**get_distance()** - Zwraca domyślną długość rysowania prostej (p. distance). 
