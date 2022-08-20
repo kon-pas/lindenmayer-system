@@ -115,6 +115,61 @@ Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy wszyst
 - **DEFAULT_DISTANCE** - Domyślna długość rysowanej prostej. Wynosi 1.
 - **DEFAULT_STEPS** - Domyślna liczba kroków. Wynosi 5.
 
+## Przykładowe użytkowanie
+
+### Pierwszy przykład
+
+#### Kod
+
+```python
+# Tworzę produkcje:
+rule_1 = Rule('F', 'F+G')
+rule_2 = Rule('G -> GGFG')
+# Tworzę zbiór produkcji:
+rules = Rules(rule_1, rule_2)
+# Dodaję produkcję:
+rules.add_rule(Rule('G', 'G-G'))
+# Usuwam produkcję
+rules.remove_rule(2)
+# Tworzę L-system:
+system = Lsystem(
+ rules=rules,
+ distance=50,
+ angle=38,
+ start='F',
+ steps=10
+)
+# Definiuję własną regułę dla symbolu G
+system.define_action(symbol='G', distance=50, angle=-5)
+# Opcjonalnie zapisuję swój L-system, nadając nazwę
+system.commit("Mój L-system!")
+# Rysuję fraktal
+system.draw()
+```
+
+#### Okno graficzne
+
+Lorem
+
+### Drugi przykład
+
+#### Kod
+
+```python
+# Inicjuję wbudowane L-systemy:
+init_default_systems()
+# Wyświetlam numerowaną listę L-systemów:
+print_systems()
+# Z wyświeltanej listy wybieram L-system:
+system = get_system(4)
+# Rysuję go:
+system.draw()
+```
+
+#### Okno graficzne
+
+Lorem
+
 ## Wymagania
 
 - Biblioteka turtle.py
