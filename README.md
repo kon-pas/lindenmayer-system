@@ -1,6 +1,9 @@
 > **Note**
 > Docummentation written in polish, as required. No english available.
 
+> **Note**
+> Made in Q4 2021.
+
 # Implementacja systemu Lindenmayera, wykorzystanie go do rysowania fraktali w 2D
 
 ## Opis projektu
