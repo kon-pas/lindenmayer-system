@@ -22,15 +22,15 @@ Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
 
 ### Krzywa Kocha
 
-Lorem
+![Krzywa Kocha](assets/koch-curve.jpg)
 
 ### Smok Heighwaya
 
-Lorem
+![Smok Heighwaya](assets/dragon-curve.jpg)
 
 ### Trójkąt Sierpińskiego
 
-Lorem
+![Trójkąt Sierpińskiego](assets/sierpinski-triangle.jpg)
 
 ## Dokumentacja
 
