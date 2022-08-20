@@ -18,7 +18,36 @@ Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
 
 ## Dokumentacja
 
-### Metody
+### Klasy
+
+#### Lsystem
+
+Główna klasa modułu. Służy do zdefiniowania systemu Lindenmayera.
+
+##### Argumenty nazwane konstruktora:
+
+**start**
+Terminal startowy, rozpoczynający produkowanie słowa, na podstawie 
+którego będzie rysowany fraktal. Terminal musi być ze zbioru terminali, 
+przechowywanych jako lista terminals w zmiennych globalnych. Symbol 
+startowy musi byc pojedynczym terminalem.
+**distance**
+Domyślna długość rysowanej prostej. Wszystkie terminale, dla których nie 
+jest określona akcja, rysują prostą o długości równej tej wartości. Wartość 
+musi być liczbą.
+**angle**
+Kąt obrotu. Znaki "-" i "+" powodują obrót o wskazany kąt, kolejno zgodnie i 
+przeciwnie do ruchu wskazówek zegara.
+**rules**
+Zbiór wszystkich produkcji. Argument musi być instancją klasy Rules.
+**steps**
+Liczba iteracji po wszystkich produkcjach, w celu utworzenia słowa 
+służącego do rysowania fraktalu. Argument musi być liczbą całkowitą.
+W przypadku nie wystąpienia któregoś z argumentów przy inicjalizacji instancji, 
+brane są wartości domyślne ze zmiennych globalnych.
+
+##### Metody
+
 - **set_angle(angle)** - Ustawia kąt obrotu (p. angle). Jako argument przyjmuje liczbę.
 - **get_angle()** - Zwraca kąt obrotu (p. angle).
 - **set_start(start)** - Ustawia symbol startowy. Jako argument przyjmuje terminal ze zbioru terminali, przechowywanych jako lista terminals w zmiennych globalnych.
@@ -34,30 +63,21 @@ Więcej [tutaj](https://en.wikipedia.org/wiki/L-system).
 - **commit(name)** - Zapisuje L-system globalnie. Wszystkie zapisane L-Systemy przechowywane są w postacji listy w zmiennej globalnej systems.
 
 ### Funkcje globalne
-init_default_systems()
-W zmiennej globalnej systems umieszcza wcześniej przygotowane, 
-przykładowe L-systemy, odpowiadające popularnym fraktalom.
-print_systems()
-Wypisuje numerowaną listę zapisanych systemów.
-get_system(index)
-Zwraca system o podanym indeksie. Jako argument przyjmuje liczbę 
-całkowitą. Indeks można uzyskać za pomocą funkcji print_systems().
+
+- **init_default_systems()** - W zmiennej globalnej systems umieszcza wcześniej przygotowane, przykładowe L-systemy, odpowiadające popularnym fraktalom.
+- **print_systems()**- Wypisuje numerowaną listę zapisanych systemów.
+- **get_system(index)** - Zwraca system o podanym indeksie. Jako argument przyjmuje liczbę całkowitą. Indeks można uzyskać za pomocą funkcji print_systems().
 
 ### Zmienne globalne
-special_characters
-Lista ze specjalnymi znakami, są to "+" i "-"
-terminals
-Lista z dostępnymi terminalami, są to "F" i "G"
-systems
-Lista z zapisanymi systemami - instancjami klasy Lsystem
-(p. commit(name))
-DEFAULT_ANGLE
-Domyślny kąt obrotu. Wynosi 45.
-DEFAULT_DISTANCE
-Domyślna długość rysowanej prostej. Wynosi 1.
-DEFAULT_STEPS
-Domyślna liczba kroków. Wynosi 5.
+
+- **special_characters** - Lista ze specjalnymi znakami, są to "+" i "-"
+- **terminals** - Lista z dostępnymi terminalami, są to "F" i "G"
+- **systems** - Lista z zapisanymi systemami - instancjami klasy Lsystem (p. commit(name))
+- **DEFAULT_ANGLE** - Domyślny kąt obrotu. Wynosi 45.
+- **DEFAULT_DISTANCE** - Domyślna długość rysowanej prostej. Wynosi 1.
+- **DEFAULT_STEPS** - Domyślna liczba kroków. Wynosi 5.
 
 ## Wymagania
+
 - Biblioteka turtle.py
 - Python 3.0 lub nowszy
