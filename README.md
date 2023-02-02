@@ -45,7 +45,7 @@ Implementacja zawiera dwie podstawowe operacje: rysowanie linii prostej oraz obr
 
 ## Wstęp do systemu Lindenmayera
 
-L-system jest zestawem reguł. Zawiera gramatykę składającą się z produkcji, które służą do wygenerowania słowa oraz zbiór reguł, na podstawie których rysowany jest fraktal, wykorzystując wygenerowane słowo. 
+L-system jest zestawem reguł. Zawiera gramatykę składającą się z produkcji, które służą do wygenerowania słowa oraz zbiór reguł, na podstawie których rysowany jest fraktal, wykorzystując wygenerowane słowo.
 Więcej znajdziesz [tutaj](https://en.wikipedia.org/wiki/L-system).
 
 ## Przykładowe fraktale utworzone za pomocą modułu
@@ -87,7 +87,7 @@ W przypadku nie wystąpienia któregoś z argumentów przy inicjalizacji instanc
 - **set_start(start)** - Ustawia symbol startowy. Jako argument przyjmuje terminal ze zbioru terminali, przechowywanych jako lista terminals w zmiennych globalnych.
 - **get_start()** - Zwraca symbol startowy.
 - **set_distance(distance)** - Ustawia domyślną długość rysowania prostej (p. distance). Jako argument przyjmuje liczbę.
-- **get_distance()** - Zwraca domyślną długość rysowania prostej (p. distance). 
+- **get_distance()** - Zwraca domyślną długość rysowania prostej (p. distance).
 - **set_rules(rules)** - Ustawia zbiór produkcji. Jako argument przyjmuje instancję klasy Rules.
 - **get_rules()** - Zwraca zbiór produkcji.
 - **set_name(name)** - Ustawia nazwę L-systemu, nie jest ona do niczego wykorzystywana.
@@ -102,11 +102,12 @@ Klasa Rule służy do zdefiniowania produkcji, poprzez stworzenie instacji klasy
 
 1. Rule('[lewa strona produkcji] -> [prawa strona produkcji]')
 2. Rule( '[lewa strona produkcji]', '[prawa strona produkcji]')
- 
+
 Instancje klasy Rule zawsze są wyświetlane w postaci:
 [lewa strona produkcji] -> [prawa strona produkcji]
 
 Przykładowo
+
 ```
 F -> F+G
 ```
@@ -118,6 +119,7 @@ Klasa Rules służy do grupowania produkcji, uprzednio utworzonych za pomocą kl
 Przy inicjalizacji instancji klasy Rules można podać dowolną liczbę argumentów, wszystkie natomaist muszą być instancjami klasy Rule.
 
 Instancje klasy Rules zawsze są wyświetlane w postaci numerowanej listy wszystkich produkcji, które zawiera, np.
+
 ```
 1. F -> F+G
 2. G -> F-G-F
