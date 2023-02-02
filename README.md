@@ -1,5 +1,6 @@
 > **Note**
 > Made for Python Course at Jagiellonian University in Q4 2021.
+
 > **Note**
 > Documentation written in Polish, as required. No English available.
 
