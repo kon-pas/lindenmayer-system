@@ -1,8 +1,7 @@
 > **Note**
 > Made for Python Course at Jagiellonian University in Q4 2021.
-
 > **Note**
-> Docummentation written in polish, as required. No english available.
+> Documentation written in Polish, as required. No English available.
 
 # Implementacja systemu Lindenmayera, wykorzystanie go do rysowania fraktali w 2D <!-- omit in toc -->
 
